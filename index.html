@@ -20,6 +20,8 @@
           extend: {
             colors: {
               "theme-color": "#FF4240",
+              "title-color": "#131318",
+              "description-color": "#131318",
             },
           },
         },
@@ -47,7 +49,7 @@
     <!-- Header section stars here -->
     <header class="container mx-auto relative">
       <!-- Navbar -->
-      <div class="py-6 lg:py-12">
+      <div class="my-6 lg:my-12">
         <div class="navbar p-0 bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -108,7 +110,7 @@
       </div>
 
       <!-- Slider -->
-      <div>
+      <div class="mb-10 lg:mb-24">
         <div class="carousel w-full rounded-2xl h-[200px] lg:h-[550px]">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="Images/1.png" class="w-full bg-cover bg-center" />
@@ -198,7 +200,20 @@
     <!-- Header section ends here -->
 
     <!-- Main section starts here -->
-    <main></main>
+    <main class="container mx-auto">
+      <!-- Professional hockey's club section -->
+      <div class="space-y-4 lg:space-y-6 mb-6 lg:mb-7 py-6 lg:py-8 border-y-2 border-dashed border-gray-300">
+       <h3 class="text-xl lg:text-4xl text-center font-extrabold text-title-color">Professional Hockeys Club</h3>
+       <div class="flex justify-center">
+        <p class="text-sm justify-end lg:text-base max-w-[607px] text-center text-description-color">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+       </div>
+      </div>
+
+      <!-- Progress Section -->
+      <div class="radial-progress" style="--value:70; --size:12rem; --thickness: 14px;" role="progressbar">70%
+      </div>
+      
+    </main>
     <!-- Main section end here -->
 
     <!-- Footer section starts here -->
@@ -206,3 +221,13 @@
     <!-- Footer section ends here -->
   </body>
 </html>
+
+
+
+<!-- section title and description -->
+<!-- <div class="space-y-4 lg:space-y-6 mb-6 lg:mb-7  py-6 lg:py-8 border-y-2 border-dashed border-gray-300">
+  <h3 class="text-xl lg:text-4xl text-center font-extrabold text-title-color">Professional Hockeys Club</h3>
+  <div class="flex justify-center">
+   <p class="text-sm justify-end lg:text-base max-w-[607px] text-center text-description-color">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  </div>
+ </div> -->
