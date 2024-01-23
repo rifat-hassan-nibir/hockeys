@@ -13,6 +13,9 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/cff9795881.js" crossorigin="anonymous"></script>
+
     <!-- Tailwind Custom styles -->
     <script>
       tailwind.config = {
@@ -21,7 +24,7 @@
             colors: {
               "theme-color": "#FF4240",
               "title-color": "#131318",
-              "description-color": "#131318",
+              "description-color": "#13131899",
             },
           },
         },
@@ -214,7 +217,7 @@
           </div>
           <div class="flex flex-col items-center gap-4">
             <h3 class="text-xl font-semibold">Prayer Facility</h3>
-            <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <p class="text-center text-description-color">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
         </div>
 
@@ -223,7 +226,7 @@
           </div>
           <div class="flex flex-col items-center gap-4">
             <h3 class="text-xl font-semibold">Experienced Coach</h3>
-            <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <p class="text-center text-description-color">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
         </div>
 
@@ -232,7 +235,7 @@
           </div>
           <div class="flex flex-col items-center gap-4">
             <h3 class="text-xl font-semibold">Senior Player</h3>
-            <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <p class="text-center text-description-color">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
         </div>
 
@@ -241,7 +244,7 @@
           </div>
           <div class="flex flex-col items-center gap-4">
             <h3 class="text-xl font-semibold">Training Ground</h3>
-            <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <p class="text-center text-description-color">Amet consectetur. Condimentum dignissim adipiscing .</p>
           </div>
         </div>
       </div>
@@ -297,23 +300,251 @@
         <p class="text-sm justify-end lg:text-base max-w-[607px] text-center text-description-color px-3 lg:px-0">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
        </div>
 
-      <div class="flex justify-between gap-6">
-        <div class="w-full  bg-gray-300">
-            <h1>div 1</h1>
-            <div class="border-4 border-rose-400">
+      <!-- Products grid -->
+      <div class="flex flex-col lg:flex-row justify-between gap-6">
+        <!-- first column -->
+        <div class="w-full space-y-6">
+            <div class="flex flex-col items-center lg:flex-row border-[1px] rounded-2xl p-6 gap-5">
               <div>
-                <img src="Images/5.png" alt="">
+                <img class="w-[180px] h-[172px]" src="Images/5.png" alt="">
               </div>
+              <!-- icons div -->
+              <div class="space-y-4">
+                <div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-star text-amber-400"></i>
+                      <p>5.0</p>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                      <i class="fa-regular fa-eye text-description-color"></i>
+                      <p>20</p>
+                    </div>
+  
+                    <div class="flex items-center gap-2">
+                      <i class="fa-regular fa-heart text-description-color"></i>
+                      <p>200</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="space-y-3">
+                  <h3 class="text-xl font-extrabold text-title-color">World Cup Flags Football</h3>
+                  <p class="text-base font-medium text-description-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-3 lg:gap-0 justify-between">
+                  <h4 class="text-lg text-theme-color font-extrabold">Price - $22.00</h4>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                    <p class="text-base font-extrabold text-description-color">Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center lg:flex-row border-[1px] rounded-2xl p-6 gap-5">
               <div>
-                <p>content</p>
+                <img class="w-[180px] h-[172px]" src="Images/7.png" alt="">
+              </div>
+              <!-- icons div -->
+              <div class="space-y-4">
+                <div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-star text-amber-400"></i>
+                      <p>5.0</p>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                      <i class="fa-regular fa-eye text-description-color"></i>
+                      <p>20</p>
+                    </div>
+  
+                    <div class="flex items-center gap-2">
+                      <i class="fa-regular fa-heart text-description-color"></i>
+                      <p>200</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="space-y-3">
+                  <h3 class="text-xl font-extrabold text-title-color">World Cup Flags Football</h3>
+                  <p class="text-base font-medium text-description-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-3 lg:gap-0 justify-between">
+                  <h4 class="text-lg text-theme-color font-extrabold">Price - $22.00</h4>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                    <p class="text-base font-extrabold text-description-color">Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center lg:flex-row border-[1px] rounded-2xl p-6 gap-5">
+              <div>
+                <img class="w-[180px] h-[172px]" src="Images/9.png" alt="">
+              </div>
+              <!-- icons div -->
+              <div class="space-y-4">
+                <div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-star text-amber-400"></i>
+                      <p>5.0</p>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                      <i class="fa-regular fa-eye text-description-color"></i>
+                      <p>20</p>
+                    </div>
+  
+                    <div class="flex items-center gap-2">
+                      <i class="fa-regular fa-heart text-description-color"></i>
+                      <p>200</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="space-y-3">
+                  <h3 class="text-xl font-extrabold text-title-color">World Cup Flags Football</h3>
+                  <p class="text-base font-medium text-description-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-3 lg:gap-0 justify-between">
+                  <h4 class="text-lg text-theme-color font-extrabold">Price - $22.00</h4>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                    <p class="text-base font-extrabold text-description-color">Delivery Fee : Free</p>
+                  </div>
+                </div>
               </div>
             </div>
         </div>
-          <div class="w-full bg-gray-300">
-            <h1>div 2</h1>
+
+        <!-- 2nd column -->
+        <div class="w-full space-y-6">
+          <div class="flex flex-col items-center lg:flex-row border-[1px] rounded-2xl p-6 gap-5">
+            <div>
+              <img class="w-[180px] h-[172px]" src="Images/6.png" alt="">
+            </div>
+            <!-- icons div -->
+            <div class="space-y-4">
+              <div>
+                <div class="flex gap-4">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-star text-amber-400"></i>
+                    <p>5.0</p>
+                  </div>
+                  
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-eye text-description-color"></i>
+                    <p>20</p>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-heart text-description-color"></i>
+                    <p>200</p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="space-y-3">
+                <h3 class="text-xl font-extrabold text-title-color">World Cup Flags Football</h3>
+                <p class="text-base font-medium text-description-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              </div>
+              <div class="flex flex-col lg:flex-row gap-3 lg:gap-0 justify-between">
+                <h4 class="text-lg text-theme-color font-extrabold">Price - $22.00</h4>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                  <p class="text-base font-extrabold text-description-color">Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center lg:flex-row border-[1px] rounded-2xl p-6 gap-5">
+            <div>
+              <img class="w-[180px] h-[172px]" src="Images/8.png" alt="">
+            </div>
+            <!-- icons div -->
+            <div class="space-y-4">
+              <div>
+                <div class="flex gap-4">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-star text-amber-400"></i>
+                    <p>5.0</p>
+                  </div>
+                  
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-eye text-description-color"></i>
+                    <p>20</p>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-heart text-description-color"></i>
+                    <p>200</p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="space-y-3">
+                <h3 class="text-xl font-extrabold text-title-color">World Cup Flags Football</h3>
+                <p class="text-base font-medium text-description-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              </div>
+              <div class="flex flex-col lg:flex-row gap-3 lg:gap-0 justify-between">
+                <h4 class="text-lg text-theme-color font-extrabold">Price - $22.00</h4>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                  <p class="text-base font-extrabold text-description-color">Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center lg:flex-row border-[1px] rounded-2xl p-6 gap-5">
+            <div>
+              <img class="w-[180px] h-[172px]" src="Images/10.png" alt="">
+            </div>
+            <!-- icons div -->
+            <div class="space-y-4">
+              <div>
+                <div class="flex gap-4">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-star text-amber-400"></i>
+                    <p>5.0</p>
+                  </div>
+                  
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-eye text-description-color"></i>
+                    <p>20</p>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-heart text-description-color"></i>
+                    <p>200</p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="space-y-3">
+                <h3 class="text-xl font-extrabold text-title-color">World Cup Flags Football</h3>
+                <p class="text-base font-medium text-description-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              </div>
+              <div class="flex flex-col lg:flex-row gap-3 lg:gap-0 justify-between">
+                <h4 class="text-lg text-theme-color font-extrabold">Price - $22.00</h4>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-cart-shopping text-description-color"></i>
+                  <p class="text-base font-extrabold text-description-color">Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
+      </div>
 
+      <!-- Clients Question Section -->
+      <div class="flex flex-col items-center space-y-4 lg:space-y-6 mt-10 lg:mt-24 mb-6 lg:mb-12 py-6 lg:py-8 border-y-2 border-dashed border-gray-300">
+        <h3 class="text-xl lg:text-4xl text-center font-extrabold text-title-color">Professional Hockeys Club</h3>
+        <p class="text-sm justify-end lg:text-base max-w-[607px] text-center text-description-color px-3 lg:px-0">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+       </div>
+       
     </main>
     <!-- Main section end here -->
 
