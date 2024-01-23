@@ -43,15 +43,19 @@
   </head>
 
   <!-- Body starts here -->
-  <body>
+  <body class="px-5 lg:px-0">
     <!-- Header section stars here -->
-    <header class="container mx-auto">
+    <header class="container mx-auto relative">
       <!-- Navbar -->
       <div class="py-6 lg:py-12">
-        <div class="navbar bg-base-100">
+        <div class="navbar p-0 bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn p-0 mr-3 btn-ghost lg:hidden"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -100,6 +104,94 @@
               >Get Ticket</a
             >
           </div>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div>
+        <div class="carousel w-full rounded-2xl h-[200px] lg:h-[550px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full bg-cover bg-center" />
+
+            <!-- Black sticker for large devices-->
+            <div
+              class="flex justify-center hidden lg:block lg:justify-end lg:absolute right-8 bottom-8"
+            >
+              <div
+                class="max-w-[566px] flex flex-col gap-2 lg:gap-4 rounded-2xl p-4 lg:p-8 bg-slate-950"
+              >
+                <h3 class="text-white text-lg lg:text-2xl font-extrabold">
+                  Meet all the heroes from the field
+                </h3>
+                <p class="text-white opacity-60 text-base">
+                  Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                  turpis placerat dolor. Purus urna in sit nullam proin.
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute flex gap-3 lg:gap-4 left-[50%] -translate-x-[50%] lg:-translate-x-0 bottom-6 lg:left-10 lg:bottom-10"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle border-none bg-[#131318] text-white"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle border-none bg-[#131318] text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/2.png" class="w-full bg-cover bg-center" />
+
+            <!-- Black sticker for large devices-->
+            <div
+              class="flex justify-center hidden lg:block lg:justify-end lg:absolute right-8 bottom-8"
+            >
+              <div
+                class="max-w-[566px] flex flex-col gap-2 lg:gap-4 rounded-2xl p-4 lg:p-8 bg-slate-950"
+              >
+                <h3 class="text-white text-lg lg:text-2xl font-extrabold">
+                  Meet all the heroes from the field
+                </h3>
+                <p class="text-white opacity-60 text-base">
+                  Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                  turpis placerat dolor. Purus urna in sit nullam proin.
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute flex gap-3 lg:gap-4 left-[50%] -translate-x-[50%] lg:-translate-x-0 bottom-6 lg:left-10 lg:bottom-10"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle border-none bg-[#131318] text-white"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle border-none bg-[#131318] text-white"
+                >❯</a
+              >
+            </div>
+        </div>
+      </div>
+
+      <!-- Black sticker for mobile -->
+      <div class="flex justify-center lg:hidden lg:absolute right-8 bottom-8">
+        <div
+          class="max-w-[566px] flex flex-col gap-2 lg:gap-4 rounded-2xl p-4 lg:p-8 bg-slate-950"
+        >
+          <h3 class="text-white text-lg lg:text-2xl font-extrabold">
+            Meet all the heroes from the field
+          </h3>
+          <p class="text-white opacity-60 text-base">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
         </div>
       </div>
     </header>
