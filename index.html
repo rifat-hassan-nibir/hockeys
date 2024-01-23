@@ -19,7 +19,7 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "theme-color": "#FF4240",
             },
           },
         },
@@ -36,7 +36,7 @@
 
     <!-- Custom CSS styles -->
     <style>
-      .font-manrope {
+      body {
         font-family: "Manrope", sans-serif;
       }
     </style>
@@ -45,7 +45,64 @@
   <!-- Body starts here -->
   <body>
     <!-- Header section stars here -->
-    <header></header>
+    <header class="container mx-auto">
+      <!-- Navbar -->
+      <div class="py-6 lg:py-12">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li class="text-sm font-normal"><a>Home</a></li>
+                <li class="text-sm font-normal"><a>About</a></li>
+                <li class="text-sm font-normal"><a>Pages</a></li>
+                <li class="text-sm font-normal"><a>Blog</a></li>
+                <li class="text-sm font-normal"><a>Contact</a></li>
+              </ul>
+            </div>
+            <h1 class="text-2xl lg:text-4xl font-extrabold">
+              Hockey<span class="text-theme-color">’</span>s
+            </h1>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-base font-normal"><a>Home</a></li>
+              <li class="text-base font-normal"><a>About</a></li>
+              <li class="text-base font-normal"><a>Pages</a></li>
+              <li class="text-base font-normal"><a>Blog</a></li>
+              <li class="text-base font-normal"><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-6">
+            <a class="hidden lg:block" href=""
+              ><img src="Images/Frame.png" alt=""
+            /></a>
+            <a
+              class="bg-theme-color text-white text-lg lg:text-xl font-bold py-2 px-4 lg:py-4 lg:px-6 rounded-lg"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Header section ends here -->
 
     <!-- Main section starts here -->
